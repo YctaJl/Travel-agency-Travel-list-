@@ -1,0 +1,121 @@
+main {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container1 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container1:nth-child(1),
+.image-container1:nth-child(2),
+.image-container1:nth-child(3) {
+  flex-basis: 30%;
+  /* Ширина первых трех контейнеров (больших картинок) */
+}
+
+.image-container1:nth-child(n+4) {
+  flex-basis: 30%;
+  /* Ширина остальных контейнеров (маленьких картинок) */
+}
+
+.image-container1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container1:hover .image-overlay {
+  opacity: 1;
+}
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#articles div {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#articles div.visible {
+  opacity: 1;
+}
+
+#articles h2 {
+  margin-top: 0;
+}
+
+#articles p {
+  margin: 10px 0;
+}
+
+#articles p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#articles img {
+  width: 100%;
+  height: auto;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+  #articles div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  #articles div {
+    padding: 10px;
+  }
+}
+
+

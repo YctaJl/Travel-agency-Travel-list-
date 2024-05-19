@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel agency "Travel list"</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css\styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+    </div>
+    <div class="nav-border">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="about_us.html">О нас</a></li>
+          <li><a href="turs.html">Услуги</a></li>
+          <li><a href="forma.html">Зарегистрироваться</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
+    </div>
+  </header>
+  <main>
+    <section class="search">
+      <h1>Подберите свой отпуск мечты</h1>
+      <form>
+        <input type="text" placeholder="Откуда">
+        <input type="text" placeholder="Куда">
+        <div class="datepicker" id="depart-datepicker">
+          <input type="text" id="departure-date" placeholder="Дата отправления" required>
+          <span class="ui-datepicker-trigger"></span>
+        </div>
+        <div class="datepicker" id="return-datepicker">
+          <input type="text" id="return-date" placeholder="Дата возвращения" required>
+          <span class="ui-datepicker-trigger"></span>
+        </div>
+
+        <input type="submit" value="Подобрать">
+      </form>
+    </section>
+
+    <div class="slider">
+      <div class="slider_item">
+        <img src="photos\Alanya.jpg" alt="s">
+        <figcaption>200$ за неделю</figcaption>
+      </div>
+      <div class="slider_item">
+        <img src="photos\Chernogoruya.jpg" alt="">
+        <figcaption>120$ за неделю</figcaption>
+      </div>
+      <div class="slider_item">
+        <img src="photos\Egypt.jpg" alt="">
+        <figcaption>900$ за неделю</figcaption>
+      </div>
+      <div class="slider_item">
+        <img src="photos\italy.jpg" alt="">
+        <figcaption>500$ за неделю</figcaption>
+      </div>
+      <div class="slider_item">
+        <img src="photos\eiffel.jpg" alt="">
+        <figcaption>450$ за неделю</figcaption>
+      </div>
+    </div>
+    <section class="testimonials">
+      <div class="container">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="testimonial">
+          <img src="photos\image1.jpg" alt="Аватар" class="testimonial-avatar">
+
+          <p class="testimonial-text">Был впечатлен качеством услуг и профессионализмом команды тур-агенства. Отличный
+            тур, рекомендую,ведь есть all inclusive!</p>
+          <div class="testimonial-rating">
+            <span class="rating">5</span>/5
+            <div class="stars">
+              <i class="star"></i>
+              <i class="star"></i>
+              <i class="star"></i>
+              <i class="star"></i>
+              <i class="star"></i>
+            </div>
+          </div>
+          <p class="testimonial-author">Юреня Михаил</p>
+        </div>
+        <div class="testimonial">
+          <img src="photos\image.png" alt="Аватар" class="testimonial-avatar">
+          <p class="testimonial-text">Спасибо тур-агенству за незабываемый отпуск! Прекрасно организованное путешествие
+            и высокий уровень сервиса.</p>
+          <div class="testimonial-rating">
+            <span class="rating">4</span>/5
+            <div class="stars">
+              <i class="star"></i>
+              <i class="star"></i>
+              <i class="star"></i>
+              <i class="star"></i>
+
+            </div>
+          </div>
+          <p class="testimonial-author">Пшеничный Никита</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="news">
+      <div class="container">
+        <h2>Последние новости</h2>
+        <div class="news-item">
+          <div class="news-image">
+            <img src="photos\news1.jpg" alt="Фотография новости">
+          </div>
+          <div class="news-content">
+            <h3>Открытие нового офиса</h3>
+            <p>Мы рады сообщить о открытии нового офиса в центре города. Приходите к нам и получите специальный подарок!
+            </p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-image">
+            <img src="photos\1682068868_turizm-pibig-info-p-strani-dlya-otdikha-letom-turizm-krasivo-1.jpg"
+              alt="Фотография новости">
+          </div>
+          <div class="news-content">
+            <h3>Новое пляжное курортное предложение</h3>
+            <p>Открываем новый пляжный курорт в прекрасной стране! Насладитесь солнцем, морем и белоснежным песком на
+              нашем роскошном курорте. Бронируйте сейчас и получите специальную скидку!</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-image">
+            <img src="photos\gorod.jpg" alt="Фотография новости">
+          </div>
+          <div class="news-content">
+            <h3>Городские туры по скидке</h3>
+            <p>Планируете поездку в увлекательный город? У нас для вас особое предложение! Получите скидку до 30% на
+              городские туры по всему миру. Откройте для себя культуру, историю и впечатляющие достопримечательности.
+              Бронируйте прямо сейчас!</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-image">
+            <img src="photos\gori.jpg" alt="Фотография новости">
+          </div>
+          <div class="news-content">
+            <h3>Приключенческий туризм</h3>
+            <p>Готовы к новым приключениям? Предлагаем уникальные приключенческие туры для любителей активного отдыха.
+              Покоряйте горные вершины, преодолевайте реки и исследуйте дикую природу с опытными гидами. Забронируйте
+              свою поездку сейчас и получите возможность испытать незабываемые ощущения!</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-image">
+            <img src="photos\kulture.jpg" alt="Фотография новости">
+          </div>
+          <div class="news-content">
+            <h3>Культурный фестиваль в историческом городе</h3>
+            <p>Приглашаем вас на уникальный культурный фестиваль, который пройдет в историческом городе в самом сердце
+              страны. Вас ожидают музыкальные выступления, традиционная кухня, ярмарки и многое другое! Присоединяйтесь
+              к нам для погружения в атмосферу культуры и наслаждайтесь незабываемым опытом. Бронируйте билеты уже
+              сейчас!</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-image">
+            <img src="photos\univer.jpg" alt="Фотография новости">
+          </div>
+          <div class="news-content">
+            <h3>Приглашаем на обучение в Университет БГТУ!</h3>
+            <p><strong>Реклама:</strong> Университет БГТУ предлагает вам уникальные возможности для получения
+              высококачественного образования и успешного старта карьеры.</p>
+            <p>Мы гордимся своим престижным университетом, который предоставляет широкий выбор академических программ и
+              современное учебное окружение.</p>
+            <p>Присоединяйтесь к нам, чтобы получить образование, которое откроет двери к множеству возможностей и
+              поможет вам достичь успеха в выбранной сфере.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Компания</h3>
+        <p>Адрес: Ул. Бобруйская 25, Минск, Беларусь</p>
+        <p>Телефон: +123456789</p>
+        <p>Email: Travel_list@gmai.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Ссылки</h3>
+        <ul>
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="about_us.html">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Войдите в аккаунт</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Социальные сети</h3>
+        <a href="https://www.facebook.com/profile.php?id=100029073797776"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://www.instagram.com/_alexandrov.artem/"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://twitter.com/Weideman_1"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 Travel_list. Все права защищены.</p>
+      <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+    </div>
+  </footer>
+
+
+  <div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scripts\slick.min.js"></script>
+    <script src="scripts\script.js"></script>
+  </div>
+</body>
+
+</html>
